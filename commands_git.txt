@@ -1,0 +1,501 @@
+ 19  git status
+   20  git diff --staged
+   21  git commit -m "adding sample to local repo"
+   22  git status
+   23  git add .
+   24  git status
+   25  vi sample
+   26  rm sample
+   27  ls
+   28  vi sample1
+   29  git status
+   30  git diff
+   31  git log --oneline
+   32  git log
+   33  git commit -v
+   34  git show ff292ae
+   35  git reflog
+   36   git status
+   37  vi sample
+   38  vi sample1
+   39  git status
+   40  git commit -am "adding this file using -am"
+   41  git status
+   42  git commit -a
+   43  history
+   44  touch main.log{1..10}
+   45  ll
+   46  rm main.log*
+   47  ll
+   48  vi .gitignore
+   49  touch main.log
+   50  git status
+   51  ls
+   52  git add .
+   53  git satus
+   54  git status
+   55  git log-2
+   56  git log -2
+   57  git log --oneline
+   58  git log pretty=fuller
+   59  git log --pretty=fuller
+   60  git log --prettyoneline
+   61  git log -- prettyoneline
+   62  git log -- pretty=oneline
+   63  git log --pretty=oneline
+   64  git --ammend
+   65  git -- ammend
+   66  git commit --ammend
+   67  git commit --amend
+   68  git log --oneline
+   69  git revert cccd85c
+   70  ls
+   71  git status
+   72  git add .
+   73  git status
+   74  git commit -m " sample file added"
+   75  git push origin master
+   76  git status
+   77  history
+   78  git pull
+   79  git pull help
+   80  git pull --help
+   81  cd ..
+   82  cd ..
+   83  cd ..
+   84  cd
+   85  git pull origin master
+   86  cd /c/Users/kiran/OneDrive/desktop
+   87  git pull origin master
+   88  cd /c/Users/kiran/OneDrive/desktop/GIT/
+   89  git status
+   90  ls
+   91  git pull origin master
+   92  git pull
+   93  git pull https://github.com/kiran3011/devops-notes-for-beginners.git
+   94  ls
+   95  ls -al
+   96  git pull https://github.com/kiran3011/devops-notes-for-beginners.git
+   97  ls
+   98  cd /c/Users/kiran/OneDrive/desktop/GIT/git_demo/
+   99  git pull https://github.com/kiran3011/devops-notes-for-beginners.git
+  100  ls
+  101  ls -al
+  102  vi dcd7bc41-442e-4950-97cc-9062312ee8ff.pdf
+  103  clear
+  104  git branch
+  105  git branch -a
+  106  git branch demo_branch
+  107  ls
+  108  git branch
+  109  git checkout demo_branch
+  110  git branch
+  111  git branch -d demo_branch
+  112  git checckout master
+  113  git checkout master
+  114  git branch -d demo_branch
+  115  git branch
+  116  ls
+  117  cd kiran_repository1/
+  118  ls
+  119  git status
+  120  git branch test
+  121  git branch
+  122  git checkout test
+  123  ls
+  124  touch test1.txt
+  125  touch test2.txt
+  126  ls
+  127  git checkout master
+  128  ls
+  129  git checkout test
+  130  git status
+  131  git add .
+  132  git commit -m "adding files test1.txt & test2.txt to branch test"
+  133  git checkout master
+  134  ls
+  135  git checkout test
+  136  ls
+  137  start .
+  138  git checkout master
+  139  touch master1.txt
+  140  git add .
+  141  git commit -m "master file master1.txt added"
+  142  git checkout test
+  143  ls
+  144  start .
+  145  git branch -m test dev
+  146  git branch
+  147  git checkout dev
+  148  ls
+  149  git checkout master
+  150  git merge dev
+  151  ls
+  152  git log --oneline
+  153  git checkout dev
+  154  git log --oneline
+  155  cd ..
+  156  cd ..
+  157  cd ..
+  158  cd ..
+  159  cd git_demo
+  160  cd /c/Users/kiran/OneDrive/desktop/GIT/git_demo/
+  161  cd ..
+  162  mkdir merge
+  163  cd merge
+  164  git init
+  165  git status
+  166  git log --oneline
+  167  touch f1
+  168  git status
+  169  git add .
+  170  git status
+  171  git commit -m " file added f1 "
+  172  git status
+  173  touch f2
+  174  git add .
+  175  git commit -m " file added f2"
+  176  git log
+  177  git log --oneline
+  178  git checkout -b test
+  179  touch f3
+  180  git add .
+  181  git commit -m " file added f3 added to branch test"
+  182  touch f4
+  183  git add .
+  184  git commit -m " file added f4 added to branch test"
+  185  git log --oneline
+  186  git log --oneline decorate
+  187  git log --oneline --decorate
+  188  git log --oneline --decorate --graph
+  189  git checkout master
+  190  touch f5
+  191  git add .
+  192  git commit -m " file added f5 added to master"
+  193  touch f6
+  194  git add .
+  195  git commit -m " file added f6 added to master"
+  196  git log --oneline
+  197  git merge test
+  198  git log --oneline
+  199  cd ..
+  200  ll
+  201  ls -la
+  202  git clone https://github.com/kiran3011/htmlpreview.github.git
+  203  ls
+  204  cd htmlpreview.github/
+  205  ls
+  206  git branch
+  207  ls
+  208  git checkout -b title_change
+  209  ls
+  210  vi index.html
+  211  git status
+  212  git add .
+  213  git commit -m "file title changed in index.html"
+  214  ls
+  215  git log --oneline
+  216  git checkout master
+  217  ls
+  218  vi index.html
+  219  cat index.html
+  220  git diff master title_change
+  221  git difftool master title_change
+  222  git merge title_change
+  223  ls
+  224  cat index.html
+  225  git diff master title_change
+  226  git push origin master
+  227  git branch
+  228  git branch -d title_change
+  229  git branch
+  230  git log --oneline
+  231  clear
+  232  git log --oneline --graph --decorate
+  233  pwd
+  234  cd /c/users
+  235  ls
+  236  cd kiran
+  237  cd ..
+  238  cd ankam
+  239  root
+  240  cd rrot
+  241  cd root
+  242  cd ..root
+  243  cd ..
+  244  cd ..
+  245  ls
+  246  cd Documents\ and\ Settings/
+  247  cd ankam
+  248  cd ..
+  249  cd ..
+  250  cd /c/users
+  251  clear
+  252  ls
+  253  cd kiran
+  254  cd ..
+  255  cd kiran
+  256  ls
+  257  cd OneDrive/
+  258  ls
+  259  cd desktop
+  260  ls
+  261  cd git
+  262  ls
+  263  cd git_demo
+  264  cd ..
+  265  clear
+  266  mkdir rebase
+  267  cd rebase
+  268  ll
+  269  ls -la
+  270  git init
+  271  touch f1
+  272  git add .
+  273  git commit -m " f1 file added to master branch "
+  274  touch f2
+  275  git add .
+  276  git commit -m " f2 file added to master branch"
+  277  git log --oneline
+  278  git log --oneline --graph --decorate
+  279  git checkout -b test_branch
+  280  ls
+  281  touch f3
+  282  git add .
+  283  git commit -m " f3 file added to test branch"
+  284  touch f4
+  285  git add .
+  286  git commit -m " f4 file added to test branch"
+  287  ls
+  288  git checkout master
+  289  touch f5
+  290  git add .
+  291  git commit -m " f5 file is added to master branch"
+  292  touch f6
+  293  git add .
+  294  git commit -m " f6 is adde to master branch "
+  295   git log --oneline
+  296  git checkout test
+  297  ls
+  298  git checkout test_branch
+  299  ls
+  300  git rebase master
+  301  git log --oneline
+  302  git checkout master
+  303  git log --oneline
+  304  git merge test_branch
+  305  ls
+  306  git log --oneline
+  307  pwd
+  308  cd ..
+  309  mkdir website
+  310  cd website/
+  311  git init
+  312  vi index.html
+  313  git status
+  314  git add .
+  315  git commit -m " index.html file created"
+  316  git branch bugfix
+  317  git branch new_feature
+  318  git branch
+  319  git checkout bugfix
+  320  cat index.html
+  321  vi index.html
+  322  git status
+  323  git commit -am " index file modified with correct pin code"
+  324  start .
+  325  git checkout master
+  326  start .
+  327  git checkout new_feature
+  328  ls
+  329  git merge bugfix
+  330  start .
+  331  vi service.html
+  332  git add .
+  333  git commit -m " new service file added to new _feature branch"
+  334  ls
+  335  git checkout master
+  336  git merge new_feature
+  337  start .
+  338  git reflog
+  339  history
+  340  clear
+  341  git checkout new_feature
+  342  ls
+  343  git reflog
+  344  git branch new_feature2
+  345  git checkout new_feature2
+  346  ls
+  347  git branch
+  348  clear
+  349  git reflog
+  350  vi service.html
+  351  git commit -am "service file modified in new_feature2 branch "
+  352  git refflog
+  353  git reflog
+  354  git checkout master
+  355  ls
+  356  vi index.html
+  357  git add index.html
+  358  git commit -m " index.html file modified with city name as kakinada in master "
+  359  git merge new_feature2
+  360  git reflog
+  361  git show HEAD
+  362  git remote add origin https://github.com/kiran3011/Website.git
+  363  git branch -M master
+  364  git push -u origin master
+  365  git remote -v
+  366  git  branch -a
+  367  git push bugfix
+  368  git push origin bugfix
+  369  git push --all
+  370  git  branch -a
+  371  git pull
+  372  git  branch -a
+  373  git pull
+  374  ls
+  375  ls -a
+  376  ls
+  377  cat hello.html
+  378  cat hello.html
+  379  git fetch
+  380  ls
+  381  cat hello.html
+  382  git merge
+  383  cat hello.html
+  384  pwd
+  385  nano service.txt
+  386  ls
+  387  cat service.txt
+  388  vi service.txt
+  389  git add .
+  390  git commit -m "service.txt file created "
+  391  ls
+  392  git status
+  393  git branch Dev1
+  394  git branch dev2
+  395  git checkout dev1
+  396  vi service.txt
+  397  git add .
+  398  git commit -m "file modified for training by dev1"
+  399  git checkout master
+  400  start .
+  401  cat service .txt
+  402  cat service.txt
+  403  git checkout dev2
+  404  vi service.txt
+  405  git add .
+  406  git commit -m " file modified for consulting by dev2"
+  407  git checkout master
+  408  git merge dev1
+  409  cat service.txt
+  410  git merge dev2
+  411  cat service.txt
+  412  start .
+  413  cat service.txt
+  414  start .
+  415  cat service.txt
+  416  git status
+  417  git add .
+  418  git commit -m " file modified final"
+  419  git branch
+  420  git branch -d bugfix
+  421  git branch
+  422  git push origin:bugfix
+  423  git push origin :bugfix
+  424  git branch -D new_feature2
+  425  git branch
+  426  git branch -d help
+  427  git branch -d --help
+  428  history
+  429  cd /c/Users/kiran/OneDrive/desktop/GIT/git_demo/
+  430  push orogin master
+  431  git push origin master
+  432  ls
+  433  cd kiran_repository1/
+  434  ls
+  435  git push origin master
+  436  ls -all
+  437  ls -a
+  438  ls -all
+  439  git push origin master
+  440  touch f1
+  441  git add .
+  442  git commit -m " adding new file f1 "
+  443  git push origin master
+  444  git status
+  445  git push origin dev
+  446  git branch
+  447  git merge dev
+  448  git checkout master
+  449  git merge dev
+  450  git push origin master
+  451  git log --oneline
+  452  git remote -v
+  453  cd C/users/
+  454  history
+  455  cd kiran_repository1
+  456  cd c/users
+  457  cd /c/users/kiran
+  458  pwd
+  459  cd kiran_repository1
+  460  history
+  461  cd /c/users/kiran/OneDrive/desktop/GIT/git_demo/kiran_repository1/
+  462  git pull
+  463  ls
+  464  git branch
+  465  git pull branch
+  466  git branch -a
+  467  git pull
+  468  git pull
+  469  git branch
+  470  git branch -a
+  471  git pull
+  472  git branch -a
+  473  git branch
+  474  ls
+  475  ls -la
+  476  cd website-new/
+  477  cd /c/users/kiran/OneDrive/desktop/GIT/git_demo/kiran_repository1/
+  478  ls -la
+  479  cd .git/
+  480  ls
+  481  cat config
+  482  cd ../..
+  483  ls
+  484  clear
+  485  git clone git@github.com:kiran3011/kiran_repository1.git
+  486  ls
+  487  rm -rf kiran_repository1/
+  488  git clone git@github.com:kiran3011/kiran_repository1.git
+  489  ls -al ~/.ssh
+  490  ssh-keygen -t ed25519 -C "awsdevops009@gmail.com"
+  491  cd ..
+  492  "ssh-keygen -t ed25519 -C "kiranteja.ankam@gmail.com"
+  493  n
+  494  cd /c/users/kiran/OneDrive/desktop/GIT/git_demo/kiran_repository1/
+  495  cd ..
+  496  cd /c/users/kiran/OneDrive/desktop/GIT/
+  497  ssh-keygen -t ed25519 -C "kiranteja.ankam@gmail.com"
+  498  ls -al ~/.ssh
+  499  cat id_ed25519
+  500  cat id_ed25519
+  501  ls
+  502  ls -la
+  503  ls -l ~/.ssh/
+  504  cat id_ed25519
+  505  cat ~/.ssh/id_e25519
+  506  cat ~/.ssh/id_e25519.pub
+  507  cat ~/.ssh/id_ed25519.pub
+  508  cat ~/.ssh/id_ed25519
+  509  ssh -T git@github.com
+  510  git clone git@github.com:kiran3011/kiran_repository1.git
+  511  ls
+  512  cd kiran_repository1/
+  513  ls
+  514  git push
+  515  history
+  516  clea
+  517  clear
+  518  history
+
